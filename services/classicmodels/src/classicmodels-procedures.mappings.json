@@ -1,0 +1,15 @@
+{
+  "sampleP" : {
+    "procedureString" : "call build_email_list(?)",
+    "parameters" : [ {
+      "name" : "emails",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "''",
+      "required" : true,
+      "parameterType" : "IN_OUT"
+    } ]
+  }
+}

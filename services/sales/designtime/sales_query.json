@@ -1,0 +1,51 @@
+{
+  "sampleQ" : {
+    "name" : "sampleQ",
+    "description" : "query",
+    "version" : "V2",
+    "queryString" : "select * from productcatalog",
+    "countQueryString" : "select count(*) from (select * from productcatalog) wmTempTable",
+    "nativeSql" : true,
+    "fetchCount" : true,
+    "type" : "SELECT",
+    "parameters" : [ ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "response" : {
+      "typeRef" : "com.custom_profile_deploy.sales.models.query.SampleQResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "PAGINATED",
+      "properties" : [ {
+        "name" : "product_id",
+        "fieldName" : "productId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "planCode",
+        "fieldName" : "planCode",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "unitedHealthCarePlan",
+        "fieldName" : "unitedHealthCarePlan",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

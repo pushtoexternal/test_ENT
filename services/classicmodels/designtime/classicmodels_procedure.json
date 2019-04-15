@@ -1,0 +1,38 @@
+{
+  "sampleP" : {
+    "name" : "sampleP",
+    "description" : "proc",
+    "version" : "V2",
+    "procedureString" : "call build_email_list(:emails)",
+    "parameters" : [ {
+      "name" : "emails",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "''",
+      "required" : true,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "response" : {
+      "typeRef" : "com.custom_profile_deploy.classicmodels.models.procedure.SamplePResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "emails",
+        "fieldName" : "emails",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

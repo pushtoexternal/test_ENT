@@ -1,0 +1,24 @@
+{
+  "headers" : { },
+  "endpointAddress" : "https://stage-studio.wavemakeronline.com/edn-services/rest/users/projects/list",
+  "method" : "GET",
+  "requestBody" : "",
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "headers" : {
+      "Server" : [ "CloudJee Server/7.0 [Servlet/3.0 JSP/2.1]" ],
+      "Cache-Control" : [ "max-age=0" ],
+      "ETag" : [ "\"0674bf0d556d9277c74c179b3544962c2\"" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Length" : [ "1809" ],
+      "Date" : [ "Thu, 01 Dec 2016 05:00:45 GMT" ],
+      "Content-Type" : [ "application/json" ]
+    },
+    "responseBody" : "[{\"projectId\":\"proj-b45e010d-4cb4-4028-b9c5-564f63a82dc4\",\"name\":\"Deploy_Prod_Profile\",\"displayName\":\"Deploy_Prod_Profile\",\"description\":\"\",\"icon\":\"default.png\",\"projectType\":\"APPLICATION\",\"createdByUserId\":\"20161130359016\",\"lastModifiedByUserId\":\"20161130359016\",\"createdAt\":1480527314000,\"lastModifiedAt\":1480568141000,\"status\":\"LIVE\",\"subscriptionState\":\"ENABLED\",\"accessibility\":true,\"platformType\":\"WEB\",\"projectShellId\":\"\",\"currentUserId\":\"20161130359016\",\"visibility\":\"PUBLIC\",\"projectAppUrl\":\"http://e1256210368e9.stage-cloud.wavemakeronline.com/Deploy_Prod_Profile\",\"markedDelete\":false,\"role\":\"OWNER\",\"mappingStatus\":\"ACTIVE\",\"studioProjectId\":\"WMPRJ2c9180c55804e2b50158b64e1f430920\",\"permissions\":{\"export\":true,\"pushToExternalVcs\":true,\"owner\":true,\"delete\":true,\"deploy\":true,\"copy\":true},\"noOfUsers\":1,\"noOfTeams\":0,\"lastAccessedDate\":1480567983000,\"active\":true,\"id\":\"proj-b45e010d-4cb4-4028-b9c5-564f63a82dc4\",\"sampleApp\":false},{\"projectId\":\"proj-092a79db-6af5-428b-bf97-8eb1ba420c99\",\"name\":\"custom_Profile_Deploy\",\"displayName\":\"custom_Profile_Deploy\",\"description\":\"\",\"icon\":\"default.png\",\"projectType\":\"APPLICATION\",\"createdByUserId\":\"20161130359016\",\"lastModifiedByUserId\":\"20161130359016\",\"createdAt\":1480568239000,\"lastModifiedAt\":1480568248000,\"status\":\"DEVELOPMENT\",\"subscriptionState\":\"ENABLED\",\"accessibility\":true,\"platformType\":\"WEB\",\"projectShellId\":\"\",\"currentUserId\":\"20161130359016\",\"visibility\":\"PUBLIC\",\"markedDelete\":false,\"role\":\"OWNER\",\"mappingStatus\":\"ACTIVE\",\"studioProjectId\":\"WMPRJ2c9180c55804e2b50158b8be85240926\",\"permissions\":{\"export\":true,\"pushToExternalVcs\":true,\"owner\":true,\"delete\":true,\"deploy\":true,\"copy\":true},\"noOfUsers\":1,\"noOfTeams\":0,\"lastAccessedDate\":1480568419000,\"active\":true,\"id\":\"proj-092a79db-6af5-428b-bf97-8eb1ba420c99\",\"sampleApp\":false}]",
+    "convertedResponse" : null,
+    "statusCode" : 200
+  },
+  "redirectEnabled" : true,
+  "authDetails" : null,
+  "contentType" : "text/xml"
+}

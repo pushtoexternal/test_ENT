@@ -1,0 +1,197 @@
+{
+  "basePath" : "/edn-services",
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "host" : "stage-studio.wavemakeronline.com",
+  "paths" : {
+    "/rest/users/projects/list" : {
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/rest/users/projects/list",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "items" : {
+            "type" : "string"
+          },
+          "description" : "Cookie",
+          "name" : "Cookie",
+          "x-WM-EDITABLE" : true,
+          "required" : false,
+          "type" : "string",
+          "in" : "header"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "items" : {
+                "$ref" : "#/definitions/RootResponseROOTEntryItem"
+              },
+              "type" : "array",
+              "uniqueItems" : false
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "projectsList_RestServiceVirtualController-invoke"
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.projectsList.scheme}://${rest.projectsList.host}${rest.projectsList.basepath}/rest/users/projects/list",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "schemes" : [ "https" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "projectsList.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/RootResponseROOTEntryItem"
+          },
+          "type" : "array",
+          "uniqueItems" : false
+        }
+      }
+    },
+    "RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "projectsList.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "visibility" : {
+          "type" : "string"
+        },
+        "projectType" : {
+          "type" : "string"
+        },
+        "projectId" : {
+          "type" : "string"
+        },
+        "noOfTeams" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "projectAppUrl" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "createdByUserId" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "lastModifiedByUserId" : {
+          "type" : "string"
+        },
+        "createdAt" : {
+          "format" : "int64",
+          "type" : "integer"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "currentUserId" : {
+          "type" : "string"
+        },
+        "permissions" : {
+          "$ref" : "#/definitions/permissions"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "lastModifiedAt" : {
+          "format" : "int64",
+          "type" : "integer"
+        },
+        "accessibility" : {
+          "type" : "boolean"
+        },
+        "icon" : {
+          "type" : "string"
+        },
+        "lastAccessedDate" : {
+          "format" : "int64",
+          "type" : "integer"
+        },
+        "status" : {
+          "type" : "string"
+        },
+        "sampleApp" : {
+          "type" : "boolean"
+        },
+        "mappingStatus" : {
+          "type" : "string"
+        },
+        "markedDelete" : {
+          "type" : "boolean"
+        },
+        "projectShellId" : {
+          "type" : "string"
+        },
+        "studioProjectId" : {
+          "type" : "string"
+        },
+        "noOfUsers" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "subscriptionState" : {
+          "type" : "string"
+        },
+        "platformType" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "displayName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "permissions" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "projectsList.permissions",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "export" : {
+          "type" : "boolean"
+        },
+        "pushToExternalVcs" : {
+          "type" : "boolean"
+        },
+        "owner" : {
+          "type" : "boolean"
+        },
+        "delete" : {
+          "type" : "boolean"
+        },
+        "deploy" : {
+          "type" : "boolean"
+        },
+        "copy" : {
+          "type" : "boolean"
+        }
+      }
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "6046de94-cde7-4e02-85ff-1355a3dada72",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "wavemakeronline",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

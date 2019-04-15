@@ -23,6 +23,68 @@
     "operation" : "gotoPage",
     "pageName" : "Main"
   },
+  "loggedInUser" : {
+    "_id" : "wm-loggedInUser-wm.Variable-1492497465948",
+    "name" : "loggedInUser",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "name" : "",
+      "id" : "",
+      "tenantId" : "",
+      "isAuthenticated" : false,
+      "isSecurityEnabled" : true,
+      "roles" : [ ]
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "loginAction" : {
+    "_id" : "wm-loginVariable-wm.LoginVariable-1492497465947",
+    "name" : "loginAction",
+    "owner" : "App",
+    "category" : "wm.LoginVariable",
+    "dataBinding" : [ {
+      "target" : "j_username",
+      "value" : "bind:Widgets.j_username.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "j_password",
+      "value" : "bind:Widgets.j_password.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "j_rememberme",
+      "value" : "bind:Widgets.j_rememberme.datavalue",
+      "type" : "boolean"
+    } ],
+    "dataSet" : {
+      "j_password" : "",
+      "j_rememberme" : false,
+      "j_username" : ""
+    },
+    "type" : "string",
+    "saveInPhonegap" : false,
+    "onError" : "loginVariableonError($event, $s)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "useDefaultSuccessHandler" : true
+  },
+  "logoutAction" : {
+    "_id" : "wm-logoutVariable-wm.LogoutVariable-1492497465947",
+    "name" : "logoutAction",
+    "owner" : "App",
+    "category" : "wm.LogoutVariable",
+    "type" : "string",
+    "saveInPhonegap" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "redirectTo" : "Login",
+    "useDefaultSuccessHandler" : true
+  },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",
     "name" : "supportedLocale",

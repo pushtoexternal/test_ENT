@@ -1,0 +1,34 @@
+{
+  "username" : "root",
+  "password" : "7b6a43524a322c0c6e6166771a1378700d662158",
+  "url" : "jdbc:mysql://54.189.223.203:3307/AllTypesDBAutomation?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "AllTypesDBAutomation",
+  "packageName" : "com.custom_profile_deploy.alltypesdbautomation",
+  "dbType" : "MySQL",
+  "host" : "54.189.223.203",
+  "dbName" : "AllTypesDBAutomation",
+  "port" : "3307",
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "ALL TYPES",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null
+  },
+  "readOnly" : true
+}

@@ -1,0 +1,27 @@
+{
+  "headers" : { },
+  "endpointAddress" : "https://stage-studio.wavemakeronline.com/run-zgbkhsdyxh/CRUDRestServices/services/hrdb/Employee",
+  "method" : "POST",
+  "requestBody" : "{\"firstname\":\"sdff\",\"lastname\":\"dgdgdg\",\"street\":\"dfgddfg\",\"city\":\"dfgdfg\",\"state\":\"df\",\"zip\":\"234234\",\"birthdate\":\"2017-04-18\",\"picurl\":\"werwer\",\"jobTitle\":\"wrwerwer\",\"username\":\"dfdsdg\",\"password\":\"gfdgfd\",\"role\":\"wwwe\",\"tenantId\":2,\"department\":{\"deptId\":2,\"name\":\"Marketing\",\"budget\":1129777,\"q1\":225955,\"q2\":271146,\"q3\":327635,\"q4\":305040,\"deptCode\":\"Mktg\",\"location\":\"New York\",\"tenantId\":1},\"employeeByManagerId\":{\"empId\":3,\"firstname\":\"Chris\",\"lastname\":\"Madison\",\"street\":\"2525 Cypress Lane\",\"city\":\"Atlanta\",\"state\":\"GA\",\"zip\":\"14231\",\"birthdate\":\"1975-09-30\",\"picurl\":\"http://dev.wavemaker.com/examples/salesrep/Chris-Madison.png\",\"jobTitle\":\"Architect\",\"deptId\":1,\"username\":\"chris.madison\",\"password\":\"wavemaker\",\"role\":\"user\",\"managerId\":1,\"tenantId\":1,\"department\":{\"deptId\":1,\"name\":\"Engineering\",\"budget\":1936760,\"q1\":445455,\"q2\":522925,\"q3\":426087,\"q4\":542293,\"deptCode\":\"Eng\",\"location\":\"San Francisco\",\"tenantId\":1}}}",
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "headers" : {
+      "X-Frame-Options" : [ "SAMEORIGIN" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "X-Content-Type-Options" : [ "nosniff" ],
+      "Connection" : [ "keep-alive" ],
+      "Vary" : [ "Accept-Encoding" ],
+      "X-XSS-Protection" : [ "1; mode=block" ],
+      "Date" : [ "Tue, 18 Apr 2017 09:03:22 GMT" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ]
+    },
+    "responseBody" : "{\"empId\":12,\"firstname\":\"sdff\",\"lastname\":\"dgdgdg\",\"street\":\"dfgddfg\",\"city\":\"dfgdfg\",\"state\":\"df\",\"zip\":\"234234\",\"birthdate\":\"2017-04-18\",\"picurl\":\"werwer\",\"jobTitle\":\"wrwerwer\",\"deptId\":2,\"username\":\"dfdsdg\",\"password\":\"gfdgfd\",\"role\":\"wwwe\",\"managerId\":3,\"tenantId\":2,\"department\":{\"deptId\":2,\"name\":\"Marketing\",\"budget\":1129777,\"q1\":225955,\"q2\":271146,\"q3\":327635,\"q4\":305040,\"deptCode\":\"Mktg\",\"location\":\"New York\",\"tenantId\":1},\"employeeByManagerId\":{\"empId\":3,\"firstname\":\"Chris\",\"lastname\":\"Madison\",\"street\":\"2525 Cypress Lane\",\"city\":\"Atlanta\",\"state\":\"GA\",\"zip\":\"14231\",\"birthdate\":\"1975-09-30\",\"picurl\":\"http://dev.wavemaker.com/examples/salesrep/Chris-Madison.png\",\"jobTitle\":\"Architect\",\"deptId\":1,\"username\":\"chris.madison\",\"password\":\"wavemaker\",\"role\":\"user\",\"managerId\":1,\"tenantId\":1,\"department\":{\"deptId\":1,\"name\":\"Engineering\",\"budget\":1936760,\"q1\":445455,\"q2\":522925,\"q3\":426087,\"q4\":542293,\"deptCode\":\"Eng\",\"location\":\"San Francisco\",\"tenantId\":1}}}",
+    "convertedResponse" : null,
+    "statusCode" : 200
+  },
+  "redirectEnabled" : true,
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : null
+}
